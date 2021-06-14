@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import reducer, { initialState } from "./reducers/reducer";
+import { StateProvider } from "./reducers/StateProvider";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import RootPage from './Components/RootPage';
+import Feature from './Components/Feature';
+import About from './Components/About';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <Router>
+      <Route  component={Header}/>
+
+      <App >
+       
+        <Route exact path="/home" component={Home}/>
+        <Route exact path="/" component={RootPage}/>
+        <Route exact path="/feature" component={Feature}/>
+        <Route exact path="/about" component={About}/>
+
+      </App>
+      </Router> 
+      </StateProvider>
+       </React.StrictMode>,
   document.getElementById('root')
 );
 
