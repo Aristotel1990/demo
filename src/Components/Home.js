@@ -15,7 +15,8 @@ function Home({history}) {
           };
         
       }, [isLogin]);
-    return (<Sidebar/>
+    return (
+    <Sidebar/>
     )
 }
 

@@ -14,12 +14,12 @@ function Header({history}) {
 
     return (
       
-        <div >
-      <Navbar collapseOnSelect expand="lg" style={{background: "#1a1a1a"}} variant="dark">
+        <div style={{background: "black"}} >
+  <Navbar collapseOnSelect expand="lg"  variant="dark">
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
-    <Nav.Link ><Link to="/home" style={{color:'grey'}}>Home</Link></Nav.Link>
+  <Navbar.Collapse  id="responsive-navbar-nav">
+    <Nav  className="ml-auto">
+    <Nav.Link  ><Link to="/home"  style={{color:'grey'}}>Home</Link></Nav.Link>
       <Nav.Link ><Link to="/feature" style={{color:'grey'}}>Feature</Link></Nav.Link>
       <Nav.Link ><Link to="/about" style={{color:'grey'}}>About</Link></Nav.Link>
      

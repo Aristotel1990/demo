@@ -7,6 +7,8 @@ function Dashboard() {
 
     return (
         <div>
+       
+       
             <Table striped bordered hover variant="dark">
   <thead>
     <tr>
@@ -14,6 +16,7 @@ function Dashboard() {
       <th>First Name</th>
       <th>Last Name</th>
       <th>Address</th>
+      <th>Address 2 </th>
       <th>Age</th>
       
 
@@ -27,6 +30,7 @@ function Dashboard() {
       <td>{data.name}</td>
       <td>{data.surname}</td>
       <td>{data.address}</td>
+      <td>{data.address2}</td>
       <td>{data.age}</td>
 
     </tr>)
