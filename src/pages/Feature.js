@@ -3,15 +3,14 @@ import { Jumbotron } from 'react-bootstrap'
 
 function Feature() {
     return (
-        <Jumbotron>
+      <Jumbotron>
         <h1>Feature</h1>
         <p>
-          Sign in to access dashboard panel. You can access it free only if you click submit.
-
+          Sign in to access dashboard panel. You can access it free only if you
+          click submit.
         </p>
-       
       </Jumbotron>
-    )
+    );
 }
 
 export default Feature
